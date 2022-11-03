@@ -19,6 +19,7 @@
  */
 package thymeleafsandbox.stsm.web.controller;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Calendar;
 import java.util.List;
@@ -84,6 +85,10 @@ public class SeedStarterMngController {
     
     @ModelAttribute("allSeedStarters")
     public List<SeedStarter> populateSeedStarters() {
+        List<String> students = new ArrayList<>();
+        for(String student: students){
+
+        }
         return this.seedStarterService.findAll();
     }
     

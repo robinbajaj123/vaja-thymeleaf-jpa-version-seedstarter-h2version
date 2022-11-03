@@ -58,6 +58,7 @@ public class SeedStarterRepository {
 
     public void add(final SeedStarter seedStarter) {
         KeyHolder keyHolder = new GeneratedKeyHolder();
+        System.out.println("seedstarter  "+seedStarter);
         PreparedStatementCreator preparedStatementCreator = con -> {
             PreparedStatement preparedStatement = con.prepareStatement(INSERT_QUERY, Statement.RETURN_GENERATED_KEYS);
             preparedStatement.setString(1, seedStarter.getDatePlanted().toString());

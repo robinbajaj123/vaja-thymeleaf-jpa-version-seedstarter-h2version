@@ -10,7 +10,6 @@ public class Row {
 
     private Integer rowId;
 
-
     private Variety variety = null;
 
     private Integer seedsPerCell ;
